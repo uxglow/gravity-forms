@@ -1,7 +1,7 @@
 /*
 Form Name: Cloud
 Form URI: https://github.com/uxglow/gravity-forms/blob/master/cloud/1.0/cloud.css
-Author: UX Glow
+Author: UX Glow, Fahad Mahmood, Aqib Raza
 Author URI: http://uxglow.com/
 Description: __desc__
 Version: 1.0
@@ -96,11 +96,16 @@ Tags: Gravity Forms, Cloud
 	border: 1px solid #777;
     color: #6a6a6a;
 }
+.gform_wrapper input[type="file"] {
+  background: transparent none repeat scroll 0 0 !important;
+  border: 0 none !important;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0 !important;
+}
 .gform_wrapper .gform_footer input.button, 
 .gform_wrapper .gform_footer input[type="submit"], 
-.gform_wrapper .gform_page_footer input.button, 
-.gform_wrapper .gform_page_footer input[type="submit"] {
-    background: #505050;
+.gform_wrapper .gform_page_footer input.button, background: #505050;
     border: medium none;
     color: #fff;
     cursor: pointer;
@@ -134,6 +139,13 @@ body .gform_wrapper ul li.gfield {
 }
 body .gform_wrapper .top_label div.ginput_container {
 	margin-top: 4px;	
+}
+.gform_wrapper input[type="file"] {
+  background: transparent none repeat scroll 0 0 !important;
+  border: 0 none !important;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0 !important;
 }
 .gform_wrapper .gsection {
     border-bottom: 1px solid #666;

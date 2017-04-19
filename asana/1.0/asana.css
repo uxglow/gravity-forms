@@ -1,7 +1,7 @@
 /*
 Form Name: Asana
 Form URI: https://github.com/uxglow/gravity-forms/blob/master/asana/1.0/asana.css
-Author: UX Glow
+Author: UX Glow, Fahad Mahmood, Aqib Raza
 Author URI: http://uxglow.com/
 Description: __desc__
 Version: 1.0
@@ -67,11 +67,16 @@ Tags: Gravity Forms, Asana
 	border: 1px solid #27ae60;
     color: #2c3e50;
 }
+.gform_wrapper input[type="file"] {
+  background: transparent none repeat scroll 0 0 !important;
+  border: 0 none !important;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0 !important;
+}
 .gform_wrapper .gform_footer input.button, 
 .gform_wrapper .gform_footer input[type="submit"], 
-.gform_wrapper .gform_page_footer input.button, 
-.gform_wrapper .gform_page_footer input[type="submit"] {
-    font-size: 1em;
+.gform_wrapper .gform_page_footer input.button, font-size: 1em;
     margin: 0 0 16px;
     width: 100%;
 	background: #27ae60 none repeat scroll 0 0;
@@ -93,7 +98,13 @@ Tags: Gravity Forms, Asana
     box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
     color: #fff;
 }
-
+.gform_wrapper input[type="file"] {
+  background: transparent none repeat scroll 0 0 !important;
+  border: 0 none !important;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0 !important;
+}
 /* Custome Error*/
 .gform_wrapper div.validation_error {
     border-bottom: 2px solid #790000;
@@ -107,6 +118,7 @@ Tags: Gravity Forms, Asana
     text-align: center;
     width: 100%;
 }
+
 .gform_wrapper li.gfield.gfield_error, 
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
 	background-color: rgba(255, 223, 224, 0.25);
