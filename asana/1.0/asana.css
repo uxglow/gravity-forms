@@ -1,124 +1,196 @@
 /*
 Form Name: Asana
-Form URI: https://github.com/uxglow/gravity-forms/blob/master/asana/1.0/asana.css
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/asana/1.0/asana.css
 Author: UX Glow
 Author URI: http://uxglow.com/
 Description: __desc__
 Version: 1.0
-Tags: Gravity Forms, Asana
+Tags: Contact Form 7, Asana
 */
-
-.gform_wrapper *, .gform_wrapper *::after, .gform_wrapper *::before {
-    box-sizing: border-box  !important;
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
 }
-.gform_wrapper {
+.wpcf7{
     background-color: #fff;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
     color: #666;
-    font-family: "Open Sans",sans-serif,Arial;
-    margin: 5% auto;
-    overflow: hidden;
-    width: 500px;
-}
-.gform_wrapper form {
     float: left;
-    padding: 40px 7%;
+    font-family: "Open Sans",sans-serif,Arial;
+    margin: 0 0 30px;
+    overflow: hidden;
+    width: auto;
+}
+.wpcf7 .wpcf7-form {
+    float: left;
+    padding: 7% 6%;
     width: 100%;
 }
-.gform_wrapper form li, .gform_wrapper li > div span {
-	width: 100%;
-	float: left;
-}
-.gform_wrapper .ginput_complex.ginput_container {
-	float: left;	
+.wpcf7 h1 {
+  font-size: 24px;
+  color: #666;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:left;
 }
 
-.gform_wrapper .ginput_complex .ginput_left input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex .ginput_right input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex select,
-.gform_wrapper input.large, 
-.gform_wrapper input.medium, 
-.gform_wrapper input.small, 
-.gform_wrapper select.large, 
-.gform_wrapper select.medium, 
-.gform_wrapper select.small,
-.gform_wrapper textarea  {
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
+    padding: 0;
+    margin: 10px 0 0 0;
+	width:100%;
+	float:left;
+}
+
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
+    color: #666;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight:normal;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%
+}
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
+	float: left;
+    margin-top: 4px;
+    width: 100%;
+}
+.wpcf7 .wpcf7-form input[type=text],
+.wpcf7 .wpcf7-form input[type=date],
+.wpcf7 .wpcf7-form input[type=datetime],
+.wpcf7 .wpcf7-form input[type=number],
+.wpcf7 .wpcf7-form input[type=search],
+.wpcf7 .wpcf7-form input[type=time],
+.wpcf7 .wpcf7-form input[type=url],
+.wpcf7 .wpcf7-form input[type=email],
+.wpcf7 .wpcf7-form input[type=tel],
+.wpcf7 .wpcf7-form textarea,
+.wpcf7 .wpcf7-form select{
+    display: block;
 	border: 1px solid #ccc;
-    border-radius: 3px;
+	border-radius: 3px;
     box-sizing: border-box;
-    color: #2c3e50;
-    height: 42px;
+	font-size: 14px;
+	line-height: 18px;
+    float: left;
+    height: 40px;
     margin: 0 0 6px;
     outline: medium none;
-    padding: 10px 15px;
+    padding: 8px 15px;
     transition: all 0.3s ease-in-out 0s;
     width: 100%;
+	color: #2c3e50;
+}
+.wpcf7 .wpcf7-form input[type=text]:focus,
+.wpcf7 .wpcf7-form input[type=date]:focus,
+.wpcf7 .wpcf7-form input[type=datetime]:focus,
+.wpcf7 .wpcf7-form input[type=number]:focus,
+.wpcf7 .wpcf7-form input[type=search]:focus,
+.wpcf7 .wpcf7-form input[type=time]:focus,
+.wpcf7 .wpcf7-form input[type=url]:focus,
+.wpcf7 .wpcf7-form input[type=email]:focus,
+.wpcf7 .wpcf7-form input[type=tel]:focus,
+.wpcf7 .wpcf7-form textarea:focus,
+.wpcf7 .wpcf7-form select:focus{
+	color: #2c3e50;
+	border: 1px solid #27ae60;
+}
+.wpcf7 .wpcf7-form .field-divided{
+    width: 49%;
 }
 
-.gform_wrapper .ginput_complex .ginput_left input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
-.gform_wrapper .ginput_complex .ginput_right input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
-.gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
-.gform_wrapper .ginput_complex select:focus,
-.gform_wrapper input.large:focus, 
-.gform_wrapper input.medium:focus, 
-.gform_wrapper input.small:focus, 
-.gform_wrapper select.large:focus, 
-.gform_wrapper select.medium:focus, 
-.gform_wrapper select.small:focus,
-.gform_wrapper textarea:focus  {
-	border: 1px solid #27ae60;
-    color: #2c3e50;
-}
-.gform_wrapper .gform_footer input.button, 
-.gform_wrapper .gform_footer input[type="submit"], 
-.gform_wrapper .gform_page_footer input.button, 
-.gform_wrapper .gform_page_footer input[type="submit"] {
-    font-size: 1em;
-    margin: 0 0 16px;
+.wpcf7 .wpcf7-form .wpcf7-form-control{
     width: 100%;
-	background: #27ae60 none repeat scroll 0 0;
+}
+.wpcf7 .wpcf7-form .wpcf7-textarea{
+    height: 100px;
+}
+.wpcf7 .wpcf7-form input[type=submit], 
+.wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
+    background: #27ae60;
     border: medium none;
-    border-radius: 3px;
+	border-radius: 3px;
     color: #fff;
     cursor: pointer;
-    font-family: Arial,Helvetica,sans-serif;
     font-size: 15px;
     font-weight: bold;
     padding: 10px 15px;
+	width:120px;
     text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	opacity: 1;
 }
-.gform_wrapper .gform_footer input.button:hover, 
-.gform_wrapper .gform_footer input[type="submit"]:hover, 
-.gform_wrapper .gform_page_footer input.button:hover, 
-.gform_wrapper .gform_page_footer input[type="submit"] {
-	background: #27ae60 none repeat scroll 0 0;
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
-    color: #fff;
+.wpcf7 .wpcf7-form input[type=submit]:hover, 
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
+    background: #27ae60;
+    box-shadow:0 0 0 2px white, 0 0 0 3px #27ae60;
+    -moz-box-shadow:0 0 0 2px white, 0 0 0 3px #27ae60;
+    -webkit-box-shadow:0 0 0 2px white, 0 0 0 3px #27ae60;
+	color: #fff;
+}
+.wpcf7 .wpcf7-form .required{
+    color:red;
+}
+.wpcf7 .wpcf7-form .wpcf7-response-output{
+	background-color:#B1531F;
+	color:#fff;
+	margin:30px 0 0 0;
+	padding: 7px 1%;
+	font-size:12px;
+	text-align:center;
+	width: 98%;
+	float:left;
+}
+.wpcf7 .wpcf7-form .wpcf7-not-valid-tip{
+	color:#aa4848;
+	font-size:12px;
+	font-weight:normal;
+}
+.wpcf7 .screen-reader-response{
+	display:none;
+}
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
+	border:none;
+	background-color: #398f14;
+	color: #fff;
 }
 
-/* Custome Error*/
-.gform_wrapper div.validation_error {
-    border-bottom: 2px solid #790000;
-    border-top: 2px solid #790000;
-    clear: both;
-    color: #790000;
-    font-size: 1em;
-    font-weight: 700;
-    margin-bottom: 0;
-    padding: 12px 0;
-    text-align: center;
-    width: 100%;
-}
-.gform_wrapper li.gfield.gfield_error, 
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-	background-color: rgba(255, 223, 224, 0.25);
-    border-bottom: none;
-    border-top: none;
-    box-sizing: border-box;
-    margin-bottom: 0 !important;
-	margin-top: 8px;
-    padding-bottom: 0;
-    padding-top: 0;	
-}
-.gform_wrapper .gfield_error .gfield_label {
-    color: #333;
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ng {
+	border: none;
+	background-color: #CD0000;
+	color: #fff;
 }
 
+.wpcf7 .wpcf7-form .wpcf7-spam-blocked {
+	border: none;
+	background-color: #ffa500;
+	color: #fff;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-validation-errors {
+	border: none;
+	background-color: #f7e700;
+	color: #333;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
