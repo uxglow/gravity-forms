@@ -1,11 +1,11 @@
 /*
-Form Name: Announcement
-Form URI: https://github.com/uxglow/gravity-forms/blob/master/announcement/1.0/announcement.css
+Form Name: Asana
+Form URI: https://github.com/uxglow/gravity-forms/blob/master/asana/1.0/asana.css
 Author: UX Glow
 Author URI: http://uxglow.com/
 Description: __desc__
 Version: 1.0
-Tags: Gravity Forms, Announcement
+Tags: Gravity Forms, Asana
 */
 
 div.gform_wrapper *, 
@@ -14,11 +14,12 @@ div.gform_wrapper *::before {
     box-sizing: border-box  !important;
 }
 div.gform_wrapper {
-    background: #d64b4d none repeat scroll 0 0;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
     color: #fff;
     font-family: "Open Sans",sans-serif,Arial;
     margin: 5% auto;
+	float:left;
     overflow: hidden;
     width: auto;
 }
@@ -31,22 +32,7 @@ div.gform_wrapper form {
 div.gform_wrapper form > div.gform_heading{
 	position:relative;
 }
-div.gform_wrapper form > div.gform_heading:before {
-    background-color: #fff;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAYAAAB4d5a9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABAhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVFNjZCRDZCODUzOTExRTU4RTQwRkQwODFEOUZEMEE3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVFNjZCRDZBODUzOTExRTU4RTQwRkQwODFEOUZEMEE3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTk5NzA1OGEtZDI3OC00NDZkLWE4ODgtNGM4MGQ4YWI1NzNmIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YzRkZmQxMGMtY2NlNS0xMTc4LWE5OGQtY2NkZmM5ODk5YWYwIi8+IDxkYzp0aXRsZT4gPHJkZjpBbHQ+IDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Z2x5cGhpY29uczwvcmRmOmxpPiA8L3JkZjpBbHQ+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+S6qwiQAAAOhJREFUeNpi/P//PwOtACMj4wIwA2QJtTAQBAAxyOAPUP5/MKaCwQZAPAFkMNxQsNsptAQIFIC4AYgfIBtMsSVAIADEBUB8AZfBZFkCNTgBiDcQYzBRlkAj7T81MIol0LBFF6SqJYwwm4CCwGTNSLVMg2weEwMdAN0saYQWAQI0K16Qyy6gRaBcy0/rODmAxi8E4kQg3kipjcj5pAEtKS7AkjEvUJoZA9AUH8BTdhWQVXZBNWMoJrIUfkB02YXFVQLk1CfQ4IXkePSaEZgiQJFvjyTkCFRzgKo1IxA4IFVAH0jxCS4MEGAAKs1HmjH1a48AAAAASUVORK5CYII=");
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: "";
-    display: block;
-    float: right;
-    height: 50px;
-    width: 50px;
-    z-index: 1;
-	position:absolute;
-	right:0;
-	top:0;	
-}
-div.gform_wrapper form > div:nth-child(1),
+div.gform_wrapper form > div.gform_heading,
 div.gform_wrapper form > div:nth-child(2),
 div.gform_wrapper form > div:nth-child(3),
 div.gform_wrapper form > div:nth-child(4){
@@ -61,18 +47,19 @@ div.gform_wrapper form > div:nth-child(3),
 div.gform_wrapper form > div:nth-child(4){
 	padding: 0 20px;
 }
-div.gform_wrapper form div:nth-child(1){
-	background:#D64B4D;
+div.gform_wrapper form div.gform_heading{
+	background:#fff;
+	border-bottom: 3px solid #333;
 	margin-bottom: 0px;
 }
-div.gform_wrapper form > div:nth-child(1) h1,
-div.gform_wrapper form > div:nth-child(1) h2,
-div.gform_wrapper form > div:nth-child(1) h3,
-div.gform_wrapper form > div:nth-child(1) h4{
-	color:#fff;	
+div.gform_wrapper form > div.gform_heading h1,
+div.gform_wrapper form > div.gform_heading h2,
+div.gform_wrapper form > div.gform_heading h3,
+div.gform_wrapper form > div.gform_heading h4{
+	color:#333;	
 }
-div.gform_wrapper form > div:nth-child(1) span{
-	color:#fff;
+div.gform_wrapper form > div.gform_heading span{
+	color:#555;
 	margin:0;
 }
 div.gform_wrapper .gform_body{}
@@ -89,7 +76,7 @@ div.gform_wrapper ul.gform_fields li.gsection{
 }
 div.gform_wrapper ul.gform_fields li.gfield h2.gsection_title{
 	background-color: transparent;
-    color: #fff;
+    color: #444;
     display: block;
     font-size: 16px;
 	line-height: 24px;
@@ -97,7 +84,7 @@ div.gform_wrapper ul.gform_fields li.gfield h2.gsection_title{
 	position:relative;
 }
 div.gform_wrapper ul.gform_fields li.gfield label.gfield_label{
-	color: #fefefe;
+	color: #444;
 	font-weight: normal;
 	font-size:14px;	
 }
@@ -105,14 +92,14 @@ div.gform_wrapper .description,
 div.gform_wrapper ul.gform_fields li.gfield .gsection_description, 
 div.gform_wrapper .instruction,
 div.gform_wrapper ul.gform_fields li.gfield .gfield_description{
-	color:#eee;
+	color:#555;
 	font-size: 12px;	
 }
 div.gform_wrapper ul.gform_fields li.gfield .gsection_description > p{
 	color:#333;	
 }
 div.gform_wrapper ul.gform_fields li.gfield label.gfield_label span.gfield_required{
-	color: #ffd754;	
+	color: #CD0000;	
 }
 div.gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]){
 	padding: 6px 12px;
@@ -131,13 +118,16 @@ div.gform_wrapper ul.gform_fields li.gfield input[type="tel"],
 div.gform_wrapper ul.gform_fields li.gfield input[type="number"],
 div.gform_wrapper ul.gform_fields li.gfield select, 
 div.gform_wrapper ul.gform_fields li.gfield textarea{
-	border: 2px solid #fff;
+	border: 1px solid #ccc;
     border-radius: 0;
     color: #999999;
     font-size: 15px;
     font-weight: 300;
     height: 42px;
     width: 100%;
+}
+div.gform_wrapper ul.gform_fields li.gfield .ginput_container.ginput_container_radio label{
+	color: #333;	
 }
 div.gform_wrapper ul.gform_fields li.gfield textarea{
 	height: 100px;
@@ -164,18 +154,18 @@ div.gform_wrapper ul.gform_fields li.gfield input[type="tel"]:focus,
 div.gform_wrapper ul.gform_fields li.gfield input[type="number"]:focus,
 div.gform_wrapper ul.gform_fields li.gfield select:focus, 
 div.gform_wrapper ul.gform_fields li.gfield textarea:focus{
-	border-color: #999;
+	border-color: #27ae60;
 	color: #000;		
 }
 div.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, 
 div.gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_time_"] label{
-	color: #ffd754;
+	color: #555;
 	font-size:12px;
 	font-family:Arial, Helvetica, sans-serif;
 }
 div.gform_wrapper .gform_footer{}
 div.gform_wrapper ul.gform_fields li.gfield table.gfield_list th{
-	background-color: #ffd754;
+	background-color: transparent;
 	color: #333;
 	padding: 2px 6px;
 	text-align:center;	
@@ -184,10 +174,13 @@ div.gform_wrapper .gform_footer input.button,
 div.gform_wrapper .gform_footer input[type="submit"], 
 div.gform_wrapper .gform_page_footer input.button, 
 div.gform_wrapper .gform_page_footer input[type="submit"] {
-	background-color: #fff;
-	border: 2px solid #fff;
-	color: #333;
+	background: #27ae60 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
  	margin: 0 16px 20px 0;
+	text-transform: uppercase;
 	transition: background .7s ease-in, transform .2s ease-out;
 }
 div.gform_wrapper .gform_footer input.button:hover, 
@@ -199,22 +192,24 @@ div.gform_wrapper .gform_page_footer input[type="submit"]:hover{
 }
 
 div.gform_wrapper form > div.validation_error{
-	background-color: #ffd754;
+	background-color: #CD0000;
     border: 0 none;
-    color: #ea4335;
+    color: #fff;
     font-size: 16px;
     margin-top: 4px;
     padding: 10px 6px;
+	font-weight:normal;
 }
 div.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half){
 	width: 100% !important;
 }
 div.gform_wrapper ul.gform_fields li.gfield.gfield_error .validation_message {
-	background-color: #ffd754;
-    color: #ea4335;
+	background-color: #CD0000;
+    color: #fff;
     font-size: 14px;
     margin-top: 4px;
     padding: 2px 8px;
+	font-weight: normal;
 } 
 div.gform_wrapper ul.gform_fields li.gfield.gfield_error, 
 div.gform_wrapper ul.gform_fields li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{
